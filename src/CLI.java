@@ -2,27 +2,34 @@ import java.util.Scanner;
 
 public class CLI extends AcidCalcInterface implements Communicable{
 	Scanner scan;
-	String textline;
 	
 	@Override
 	public void run() {
-		scan = new Scanner(System.in);
+		String line = "";
 		System.out.println(SALUTATION);
-		if(scan.hasNext()) textline = scan.nextLine();
-		while(scan.hasNext()) {
-			System.out.print("more");
+		System.out.println(CLI_LOGO);
+		
+		scan = new Scanner(System.in);
+		line = scan.nextLine();
+		
+		if(line.toLowerCase().equals("end")) {
+			stop();
+			System.out.println(CLI_ENDED);
+		} else if(line.toLowerCase().equals("help")) { 
+			System.out.println(CLI_HELP);
+			run();
+		} else if(line.toLowerCase().equals("avops")) {
+			System.out.println(CLI_AVAILABLE_OPERATIONS);
+			run();
+		} else {
+			System.out.println(Computer.computeString(line));
+			run();
 		}
-		stop();
 	}
 
 	@Override
 	public void stop() {
 		scan.close();
-	}
-
-	public String getExpression() {
-		
-		return null;
 	}
 	
 }
