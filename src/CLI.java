@@ -22,7 +22,7 @@ public class CLI extends AcidCalcInterface implements Communicable{
 			System.out.println(CLI_AVAILABLE_OPERATIONS);
 			run();
 		} else {
-			System.out.println(Computer.computeString(line));
+			System.out.println(StringComputer.computeString(line));
 			run();
 		}
 	}
