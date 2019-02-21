@@ -1,4 +1,4 @@
-﻿********************AcidCalc_v1.0*********************
+﻿********************AcidCalc_v1.0**********************
 
  AcidCalc is simple multifunctional tool
 for computing math expression given in
