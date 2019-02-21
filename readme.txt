@@ -1,4 +1,4 @@
-********************AcidCalc_v1.0*********************
+п»ї********************AcidCalc_v1.0*********************
 
  AcidCalc is simple multifunctional tool
 for computing math expression given in
@@ -20,14 +20,20 @@ can be written also as :
 x!-(xxxiii+xxxxxvi)+xxxxxxxvi
 
 please pay attention that:
-	prefferable is arabic num system,
-	it may be hard to deal with some 
-	roman-expression in this version
-	
+
+			/*prefferable is arabic num system,
+fixed in v1.0f->	*it may be hard to deal with some 
+			*roman-expression in this version
+			*/ 
+
 	it is unavailable now to use negative
 	denominator please use "-(1/2)" instead
 	of "(1/-2)" - OR EXCEPTION WILL BE THROWN
 	AS SOON AS POSSIBLE!
+
+	to multiply or divide rom-numerical
+	use parentheses like this:
+	XII+VI-(XVIII)/(III)+(XIV)*II
 
  - ALL will be updated in next versions
 
@@ -43,6 +49,6 @@ It`s first update more functionallity soon in the future
 P.S. please end AcidCalc with 'end' expression it worths
 for your RAM
 
-P.S.Калькулятор побудований на основі форматування за
-допомогою regex. Детальніші коментарі в StringComputer.java
-Планую додати GUI на Swing.
+P.S. РєР°Р»СЊРєСѓР»СЏС‚РѕСЂ РїСЂР°С†СЋС” РІРёРєРѕСЂРёСЃС‚РѕРІСѓСЋС‡Рё С„РѕСЂРјР°С‚СѓРІР°РЅРЅСЏ Р·Р°
+РґРѕРїРѕРјРѕРіРѕСЋ regex. Р‘С–Р»СЊС€Рµ РєРѕРјРµРЅС‚Р°СЂС–РІ Сѓ StringComputer.java
+РІ РЅР°СЃС‚СѓРїРЅРёС… РІРµСЂСЃС–СЏС… Р±СѓРґРµ РґРѕСЃС‚СѓРїРЅРёР№ GUI РЅР° Swing.

@@ -102,10 +102,9 @@ public final class StringComputer {
 				}
 			}
 		} catch (NumberFormatException e) {
-			e.printStackTrace();
-			return "#invalid_format:"+s;
+			return "NumberFormatException#invalid_format:"+s;
 		} catch (Exception e) {
-			return "UnexpectedException: please check format";
+			return "UnexpectedException: please check the list of available operations 'avops'";
 		}
 		return s;
 	} //end of computeString()
@@ -124,6 +123,8 @@ public final class StringComputer {
 		s=s.replaceAll("X", "+10+");
 		s=s.replaceAll("IV", "+4+");
 		s=s.replaceAll("V", "+5+");
+		s=s.replaceAll("III", "+3+");
+		s=s.replaceAll("II", "+2+");
 		s=s.replaceAll("I", "+1+");
 		return s;
 	}//end of replaceRomanNumerials()
@@ -131,21 +132,24 @@ public final class StringComputer {
 	 * 
 	 */
 	private static String validateString(String s) {
-		s=s.replaceAll("\\+-", "-");
 		s=s.replaceAll("^(\\+)", "");
 		s=s.replaceAll("\\-$", "");
 		s=s.replaceAll("\\+$", "");
-		s=s.replaceAll("[\\+]+", "+");
+		s=s.replaceAll("\\+-", "-");
 		s=s.replaceAll("-\\+", "-");
+		s=s.replaceAll("[\\+]+", "+");
 		s=s.replaceAll("\\+\\*", "*");
+		s=s.replaceAll("\\*\\+", "*");
 		s=s.replaceAll("\\+/", "/");
+		s=s.replaceAll("/\\+", "/");
 		s=s.replaceAll("\\+!", "!");
+		s=s.replaceAll(" ", "");
 		
 		return s;
 	}//end of validateString()
 	/*
 	 * 
-	 * next method computes factorials
+	 * next method computes factorial
 	 */
 	public static int factorial(int n) {
 		return (n<=1)?1:n*factorial(n-1);
