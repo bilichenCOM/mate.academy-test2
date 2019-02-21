@@ -3,8 +3,7 @@ public class GUI extends AcidCalcInterface {
 
 	@Override
 	public void run() {
-		// TODO Auto-generated method stub
-		
+		System.out.println("gui will be available in next versions");
 	}
 
 	@Override

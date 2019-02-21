@@ -21,6 +21,10 @@ public class CLI extends AcidCalcInterface implements Communicable{
 		} else if(line.toLowerCase().equals("avops")) {
 			System.out.println(CLI_AVAILABLE_OPERATIONS);
 			run();
+		} else if(line.toLowerCase().equals("gui")) {
+			stop();
+			GUI gui = new GUI();
+			gui.run();
 		} else {
 			System.out.println(StringComputer.computeString(line));
 			run();
