@@ -41,7 +41,7 @@ for more details:
 'help' - show available console commands;
 'avops' - show list of available operations;
 'gui' - will open sepparate window with graphical 
-inteface (will be available in next versions);
+available in version 2.0
 'end' - close console for commands and stop AcidCalc;
 
 It`s first update more functionallity soon in the future
